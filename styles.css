@@ -156,6 +156,15 @@ h1,h2,h3,p{margin-top:0}
 .footer strong{color:var(--ink);font-size:17px}
 .footer p{margin:0 0 10px}
 
+.simple-page{min-height:100vh;padding:32px 16px;background:linear-gradient(180deg,#fff 0,#f7f7f3 100%)}
+.legal-page{max-width:860px;margin:0 auto;padding:34px;border:1px solid var(--line);border-radius:32px;background:#fff;box-shadow:var(--shadow-soft)}
+.legal-page h1{margin:18px 0;font-size:clamp(32px,5vw,54px);line-height:1;letter-spacing:-.05em}
+.legal-page h2{margin-top:28px}
+.legal-page p,.legal-page li{color:var(--muted);line-height:1.65}
+.legal-page ul{padding-left:22px}
+.legal-page .lead{font-size:18px;color:#4f5b55}
+.back-link{display:inline-flex;padding:10px 14px;border-radius:999px;background:#111513;color:#fff;font-weight:900}
+
 .trust-strip article:hover,.situation-grid article:hover,.proof-grid article:hover,.card:hover,.faq-grid article:hover{transform:translateY(-2px);border-color:rgba(24,185,121,.28);box-shadow:0 22px 58px rgba(17,21,19,.10)}
 
 @keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(34px,-28px,0) scale(1.08)}}
@@ -214,6 +223,8 @@ h1,h2,h3,p{margin-top:0}
   .doctor-avatar{width:74px;height:74px;border-radius:24px}
   .doctor-avatar img{width:54px;height:54px}
   .request-form{padding:20px;border-radius:25px}
+  .legal-page{padding:22px;border-radius:24px}
+  .simple-page{padding:14px}
   .mobile-cta a{font-size:12.5px}
 }
 
