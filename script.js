@@ -15,10 +15,10 @@
     const button = form.querySelector('button[type="submit"]');
     if (button) {
       button.disabled = true;
-      button.textContent = 'Данные сохранены на странице';
+      button.textContent = 'Заявка подготовлена';
     }
     form.classList.add('is-sent');
-    status.textContent = 'Спасибо. Проверьте телефон и краткое описание ситуации перед отправкой через согласованный канал связи.';
+    status.textContent = 'Спасибо. Заявка подготовлена: проверьте телефон и краткое описание ситуации перед передачей специалисту.';
     status.classList.add('is-visible');
   });
 })();
