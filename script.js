@@ -1,4 +1,5 @@
 (function(){
+  if (window.lucide) window.lucide.createIcons({ strokeWidth: 1.8 });
   const form = document.querySelector('#leadForm');
   const status = document.querySelector('#formStatus');
   if (!form || !status) return;
@@ -17,7 +18,7 @@
       button.textContent = 'Заявка подготовлена';
     }
     form.classList.add('is-sent');
-    status.textContent = 'MVP-режим: заявка не отправлена наружу. После подключения Telegram/Google Sheets здесь будет реальная отправка врачу.';
+    status.textContent = 'Заявка подготовлена. После подключения формы она будет автоматически передаваться специалисту.';
     status.classList.add('is-visible');
   });
 })();
