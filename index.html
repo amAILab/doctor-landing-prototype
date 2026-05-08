@@ -23,7 +23,7 @@
   <div class="topline" aria-label="Быстрая информация">
     <span>Конфиденциальная наркологическая помощь</span>
     <span>Ориентир: от 15 000 ₽ + такси</span>
-    <a href="tel:+70000000000">+7 000 000-00-00</a>
+    <a href="#request">Оставить заявку</a>
   </div>
 
   <header class="site-header">
@@ -55,7 +55,7 @@
         <p class="lead">Николай Курников уточнит ситуацию, объяснит возможные варианты помощи и заранее согласует формат обращения, стоимость и время.</p>
         <div class="hero-actions">
           <a class="button primary" href="#request">Оставить заявку</a>
-          <a class="button secondary" href="tel:+70000000000">Позвонить</a>
+          <a class="button secondary" href="#request">Описать ситуацию</a>
         </div>
         <div class="hero-note">
           <strong>Важно:</strong> сайт не является службой экстренной помощи. Если есть угроза жизни или здоровью — звоните <b>103 / 112</b>.
@@ -181,13 +181,19 @@
         <p class="eyebrow">Заявка</p>
         <h2>Опишите ситуацию — специалист свяжется с вами</h2>
         <p>Для MVP форма пока демонстрационная. Перед запуском подключим отправку в Telegram/Google Sheets/CRM и добавим реальные документы.</p>
+        <div class="next-contact-card">
+          <strong>После заявки</strong>
+          <span>1. Уточнение ситуации</span>
+          <span>2. Согласование формата и стоимости</span>
+          <span>3. Решение: консультация, выезд или экстренная служба</span>
+        </div>
         <div class="request-checks">
           <span>✓ телефон обязателен</span>
           <span>✓ срочность видна сразу</span>
           <span>✓ есть согласие на обработку</span>
         </div>
       </div>
-      <form class="request-form" action="#" method="post">
+      <form class="request-form" id="leadForm" action="#" method="post">
         <label>Имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
         <label>Телефон<input name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 ..." required></label>
         <label>Город / район<input name="area" placeholder="Например: Москва, ЮЗАО"></label>
@@ -196,6 +202,7 @@
         <label class="consent wide"><input type="checkbox" required> <span>Согласен на обработку данных для обратной связи</span></label>
         <button class="button primary wide" type="submit">Получить консультацию</button>
         <p class="form-footnote wide">Нажатие кнопки не является вызовом скорой помощи. При угрозе жизни звоните 103/112.</p>
+        <div class="form-status wide" id="formStatus" role="status" aria-live="polite"></div>
       </form>
     </section>
 
@@ -214,7 +221,7 @@
   </main>
 
   <div class="mobile-cta" aria-label="Быстрые действия">
-    <a href="tel:+70000000000">Позвонить врачу</a>
+    <a href="#request">Описать ситуацию</a>
     <a class="primary" href="#request">Оставить заявку</a>
   </div>
 
@@ -228,5 +235,6 @@
       <p>В экстренных случаях обращайтесь в скорую медицинскую помощь: 103 / 112.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
