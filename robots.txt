@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amailab.github.io/doctor-landing-prototype/sitemap.xml
