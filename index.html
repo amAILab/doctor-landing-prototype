@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Николай Курников — конфиденциальная врачебная помощь</title>
-  <meta name="description" content="Конфиденциальная врачебная консультация, согласованный выезд специалиста и сопровождение семьи в сложной ситуации. От 15 000 ₽ + такси.">
+  <title>Николай Курников — конфиденциальная наркологическая помощь</title>
+  <meta name="description" content="Конфиденциальная консультация, согласованный выезд специалиста и помощь семье в сложной ситуации. Опыт с 2007 года. От 15 000 ₽ + такси.">
   <meta name="theme-color" content="#111513">
-  <meta property="og:title" content="Николай Курников — конфиденциальная врачебная помощь">
+  <meta property="og:title" content="Николай Курников — конфиденциальная наркологическая помощь">
   <meta property="og:description" content="Консультация, согласованный выезд специалиста и помощь семье. От 15 000 ₽ + такси.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://amailab.github.io/doctor-landing-prototype/">
@@ -16,124 +16,118 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ambient-scene" aria-hidden="true">
-    <span class="ambient-orb orb-one"></span>
-    <span class="ambient-orb orb-two"></span>
-    <span class="ambient-line line-one"></span>
-    <span class="ambient-line line-two"></span>
-  </div>
   <a class="skip-link" href="#request">Перейти к заявке</a>
 
-  <div class="topline" aria-label="Быстрая информация">
+  <div class="page-bg" aria-hidden="true">
+    <span class="glow glow-a"></span>
+    <span class="glow glow-b"></span>
+    <span class="grid-fade"></span>
+  </div>
+
+  <div class="topline" aria-label="Ключевая информация">
     <span>Конфиденциальная наркологическая помощь</span>
-    <span>Ориентир: от 15 000 ₽ + такси</span>
+    <span>Опыт с 2007 года</span>
+    <span>Выезд: от 15 000 ₽ + такси</span>
     <a href="#request">Оставить заявку</a>
   </div>
 
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Доктор">
-      <span class="brand-mark">+</span>
-      <span><strong>Доктор</strong><small>Николай Курников</small></span>
+    <a class="brand" href="#top" aria-label="Николай Курников">
+      <img src="logo-drip.svg" alt="" width="42" height="42">
+      <span><strong>Николай Курников</strong><small>Конфиденциальная помощь</small></span>
     </a>
     <nav aria-label="Навигация">
       <a href="#situations">Когда обращаться</a>
       <a href="#services">Услуги</a>
       <a href="#principles">Принципы</a>
-      <a href="#documents">Документы</a>
+      <a href="#safety">Безопасность</a>
       <a href="#faq">FAQ</a>
       <a class="nav-cta" href="#request">Получить консультацию</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-badges" aria-label="Ключевые условия">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-badges" aria-label="Условия обращения">
           <span>Конфиденциально</span>
-          <span>Опыт с 2007 года</span>
-          <span>Выезд по согласованию</span>
-          <span>От 15 000 ₽ + такси</span>
+          <span>Без осуждения</span>
+          <span>Формат согласуется заранее</span>
         </div>
-        <p class="eyebrow">Врачебная помощь без лишней огласки</p>
-        <h1>Наркологическая помощь, когда нужно быстро и деликатно</h1>
-        <p class="lead">Николай Курников уточнит ситуацию, объяснит возможные варианты помощи и заранее согласует формат обращения, стоимость и время.</p>
+        <p class="eyebrow">Помощь семье в сложной ситуации</p>
+        <h1 id="hero-title">Наркологическая помощь — спокойно, деликатно и по понятному плану</h1>
+        <p class="lead">Николай Курников уточнит состояние, срочность и адрес, объяснит возможные варианты помощи и заранее согласует стоимость до выезда.</p>
         <div class="hero-actions">
           <a class="button primary" href="#request">Оставить заявку</a>
-          <a class="button secondary" href="#request">Описать ситуацию</a>
+          <a class="button secondary" href="#process">Как это проходит</a>
         </div>
-        <div class="hero-note">
-          <strong>Важно:</strong> сайт не является службой экстренной помощи. Если есть угроза жизни или здоровью — звоните <b>103 / 112</b>.
+        <div class="hero-warning" role="note">
+          <i data-lucide="triangle-alert" aria-hidden="true"></i>
+          <span><strong>Важно:</strong> сайт не является службой экстренной помощи. При угрозе жизни, потере сознания, судорогах или тяжёлом состоянии звоните <b>103 / 112</b>.</span>
         </div>
       </div>
 
-      <aside class="hero-panel" aria-label="Быстрая заявка">
-        <div class="drip-logo-showcase" aria-hidden="true">
-          <div class="drip-logo-card">
-            <img src="logo-drip.svg" alt="" loading="eager">
-          </div>
-          <p class="iv-caption">Персональная медицинская помощь без лишней огласки</p>
+      <aside class="hero-panel" aria-label="Краткая информация о заявке">
+        <div class="logo-stage" aria-hidden="true">
+          <img src="logo-drip.svg" alt="" loading="eager">
         </div>
-        <div class="panel-top">
-          <span class="pulse-dot"></span>
-          <span>Можно оставить заявку сейчас</span>
-        </div>
+        <div class="panel-status"><span></span>Заявку можно оставить сейчас</div>
         <h2>Николай Курников</h2>
         <p class="doctor-role">Наркологическая помощь · опыт с 2007 года</p>
-        <p>Опишите ситуацию коротко. Достаточно телефона, района и срочности.</p>
+        <p>Достаточно коротко описать ситуацию: кому нужна помощь, что происходит сейчас, район и удобный способ связи.</p>
         <div class="price-card">
-          <div class="mini-pills" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span>Ориентир стоимости</span>
+          <span>Ориентир выезда</span>
           <strong>от 15 000 ₽ + такси</strong>
           <small>итоговая сумма согласуется до выезда</small>
         </div>
         <a class="button primary wide" href="#request">Получить консультацию</a>
-        <p class="privacy-line">Без публичной записи на сайте. Данные нужны только для обратной связи.</p>
+        <p class="privacy-line">Данные используются только для обратной связи и согласования помощи.</p>
       </aside>
     </section>
 
-    <section class="trust-strip" aria-label="Преимущества">
-      <article><i data-lucide="heart-handshake" class="icon-svg"></i><strong>Без осуждения</strong><small>спокойный медицинский подход</small></article>
-      <article><i data-lucide="clock-3" class="icon-svg"></i><strong>Быстрый контакт</strong><small>сначала уточняем срочность</small></article>
-      <article><i data-lucide="badge-ruble" class="icon-svg"></i><strong>Цена заранее</strong><small>без сюрпризов после выезда</small></article>
-      <article><i data-lucide="shield-check" class="icon-svg"></i><strong>Деликатно</strong><small>бережно к пациенту и семье</small></article>
+    <section class="trust-strip" aria-label="Преимущества обращения">
+      <article><i data-lucide="shield-check" class="icon-svg"></i><strong>Деликатно</strong><small>без публичности и лишних деталей</small></article>
+      <article><i data-lucide="message-circle-heart" class="icon-svg"></i><strong>Без давления</strong><small>спокойный разговор с семьёй</small></article>
+      <article><i data-lucide="clock-3" class="icon-svg"></i><strong>Сначала срочность</strong><small>состояние уточняется до решения</small></article>
+      <article><i data-lucide="badge-russian-ruble" class="icon-svg"></i><strong>Цена заранее</strong><small>от 15 000 ₽ + такси</small></article>
     </section>
 
     <section class="section situations" id="situations">
       <div class="section-head center">
         <p class="eyebrow">Когда обращаться</p>
-        <h2>Если семье нужен понятный план действий</h2>
-        <p>Заявка помогает быстро понять, какой формат помощи уместен: консультация, выезд, профильная клиника или экстренная служба.</p>
+        <h2>Когда семье нужен понятный и безопасный следующий шаг</h2>
+        <p>Обращение помогает быстро определить, что уместно именно сейчас: консультация, согласованный выезд, профильная клиника или экстренная служба.</p>
       </div>
       <div class="situation-grid">
-        <article><i data-lucide="users" class="card-icon"></i><strong>Нужна помощь родственнику</strong><p>Пациент не готов сам обращаться, семье нужно понять, что делать дальше.</p></article>
-        <article><i data-lucide="activity" class="card-icon"></i><strong>Состояние вызывает тревогу</strong><p>Требуется оценить срочность и выбрать безопасный маршрут помощи.</p></article>
-        <article><i data-lucide="car" class="card-icon"></i><strong>Нужен деликатный выезд</strong><p>После уточнения состояния и адреса можно согласовать приезд специалиста.</p></article>
-        <article><i data-lucide="messages-square" class="card-icon"></i><strong>Нужна консультация</strong><p>Можно начать с разговора: без давления, публичности и лишних деталей.</p></article>
+        <article><i data-lucide="users" class="card-icon"></i><strong>Нужна помощь родственнику</strong><p>Пациент не готов обращаться сам, а семье нужно понять, как действовать без конфликта и паники.</p></article>
+        <article><i data-lucide="activity" class="card-icon"></i><strong>Состояние вызывает тревогу</strong><p>Важно оценить срочность, возможные риски и выбрать безопасный маршрут помощи.</p></article>
+        <article><i data-lucide="car" class="card-icon"></i><strong>Нужен выезд специалиста</strong><p>Выезд возможен после уточнения состояния, адреса, времени и согласования стоимости.</p></article>
+        <article><i data-lucide="messages-square" class="card-icon"></i><strong>Нужна консультация</strong><p>Можно начать с разговора: коротко, конфиденциально и без навязчивых обещаний.</p></article>
       </div>
     </section>
 
     <section class="section proof-section" id="principles">
       <div class="section-head">
         <p class="eyebrow">Принципы работы</p>
-        <h2>Медицинская корректность вместо агрессивной рекламы</h2>
+        <h2>Медицинская аккуратность вместо агрессивной рекламы</h2>
       </div>
       <div class="proof-grid">
-        <article class="med-card"><i data-lucide="award" class="card-icon"></i><strong>Опыт с 2007 года</strong><p>Николай Курников работает с обращениями в этой сфере с 2007 года. Сначала уточнение ситуации, затем согласование формата помощи.</p></article>
-        <article><i data-lucide="lock-keyhole" class="card-icon"></i><strong>Конфиденциальность</strong><p>Данные обращения используются только для связи и согласования помощи.</p></article>
-        <article><i data-lucide="leaf" class="card-icon"></i><strong>Без давления</strong><p>Спокойный разговор с пациентом и семьёй, без запугивания и навязчивых обещаний.</p></article>
-        <article><i data-lucide="wallet" class="card-icon"></i><strong>Стоимость заранее</strong><p>Ориентир — от 15 000 ₽ + такси. Итоговая сумма согласуется до выезда.</p></article>
-        <article><i data-lucide="route" class="card-icon"></i><strong>Понятный маршрут</strong><p>После заявки объясняем, что уместно: консультация, выезд, клиника или экстренная помощь.</p></article>
-        <article><i data-lucide="siren" class="card-icon"></i><strong>Экстренные случаи — 103/112</strong><p>Если состояние опасно для жизни, нужно обращаться в скорую медицинскую помощь.</p></article>
+        <article><i data-lucide="award" class="card-icon"></i><strong>Опыт с 2007 года</strong><p>Сначала уточняется ситуация, затем согласуется формат помощи и дальнейший порядок действий.</p></article>
+        <article><i data-lucide="lock-keyhole" class="card-icon"></i><strong>Конфиденциальность</strong><p>Контакты и описание ситуации нужны только для связи и согласования обращения.</p></article>
+        <article><i data-lucide="leaf" class="card-icon"></i><strong>Без запугивания</strong><p>Спокойный тон, бережное общение с пациентом и семьёй, без давления и манипуляций.</p></article>
+        <article><i data-lucide="wallet" class="card-icon"></i><strong>Стоимость до выезда</strong><p>Ориентир — от 15 000 ₽ + такси. Итоговая сумма озвучивается заранее.</p></article>
+        <article><i data-lucide="route" class="card-icon"></i><strong>Понятный маршрут</strong><p>После заявки объясняется, что безопаснее: консультация, выезд, клиника или 103/112.</p></article>
+        <article><i data-lucide="siren" class="card-icon"></i><strong>Экстренно — 103/112</strong><p>Если состояние угрожает жизни или здоровью, нужно обращаться в скорую медицинскую помощь.</p></article>
       </div>
     </section>
 
     <section class="section" id="services">
       <div class="section-head center">
         <p class="eyebrow">Услуги</p>
-        <h2>Помощь в сложной ситуации — аккуратно и по показаниям</h2>
+        <h2>Формат помощи подбирается после уточнения состояния</h2>
       </div>
       <div class="cards service-cards">
-        <article class="card featured"><span>01</span><i data-lucide="stethoscope" class="card-icon"></i><h3>Первичная консультация</h3><p>Уточнение ситуации, ответы на вопросы семьи и рекомендации по дальнейшим шагам.</p><b>Стоимость уточняется</b><a href="#request">Оставить заявку</a></article>
+        <article class="card featured"><span>01</span><i data-lucide="stethoscope" class="card-icon"></i><h3>Первичная консультация</h3><p>Уточнение ситуации, ответы на вопросы семьи и рекомендации по безопасным дальнейшим шагам.</p><b>Стоимость уточняется</b><a href="#request">Оставить заявку</a></article>
         <article class="card"><span>02</span><i data-lucide="ambulance" class="card-icon"></i><h3>Выезд специалиста</h3><p>Возможен после уточнения состояния пациента, адреса и срочности обращения.</p><b>от 15 000 ₽ + такси</b><a href="#request">Заказать выезд</a></article>
         <article class="card"><span>03</span><i data-lucide="hand-heart" class="card-icon"></i><h3>Помощь семье</h3><p>Как говорить с пациентом, чего избегать и когда нужна очная медицинская помощь.</p><b>По согласованию</b><a href="#request">Получить план</a></article>
         <article class="card"><span>04</span><i data-lucide="clipboard-check" class="card-icon"></i><h3>Сопровождение</h3><p>План дальнейших действий после первичного обращения и рекомендации по профильной помощи.</p><b>Индивидуально</b><a href="#request">Обсудить</a></article>
@@ -142,11 +136,11 @@
 
     <section class="section doctor-section" id="doctor">
       <div class="doctor-card">
-        <div class="doctor-avatar">НК</div>
+        <div class="doctor-avatar" aria-hidden="true"><img src="logo-drip.svg" alt=""></div>
         <div>
           <p class="eyebrow">Специалист</p>
           <h2>Николай Курников</h2>
-          <p>Опыт работы с 2007 года. На сайте указана базовая информация о формате обращения: консультация, согласованный выезд, ориентир стоимости от 15 000 ₽ + такси и обязательное уточнение состояния перед решением.</p>
+          <p>Опыт работы с 2007 года. На сайте указаны только базовые подтверждённые условия обращения: консультация, согласованный выезд, ориентир стоимости и обязательное уточнение состояния перед решением.</p>
         </div>
         <a class="button primary" href="#request">Связаться</a>
       </div>
@@ -156,25 +150,25 @@
       <div class="sticky-copy">
         <p class="eyebrow">Процесс</p>
         <h2>4 шага от заявки до понятного решения</h2>
-        <p>Сайт не заменяет диагностику. Его задача — быстро связать вас со специалистом и не потерять важные детали обращения.</p>
+        <p>Сайт не заменяет диагностику. Его задача — быстро собрать важные детали обращения и не потерять срочность.</p>
       </div>
       <ol class="steps">
         <li><strong>Заявка</strong><span>Вы оставляете телефон и короткое описание ситуации.</span></li>
-        <li><strong>Уточнение</strong><span>Специалист связывается, уточняет срочность, адрес и состояние.</span></li>
-        <li><strong>Формат помощи</strong><span>Согласовывается консультация, выезд или направление в профильную клинику.</span></li>
+        <li><strong>Уточнение</strong><span>Специалист связывается, уточняет срочность, адрес и текущее состояние.</span></li>
+        <li><strong>Формат помощи</strong><span>Согласовывается консультация, выезд или обращение в профильную клинику.</span></li>
         <li><strong>Стоимость</strong><span>Цена от 15 000 ₽ + такси, итоговая сумма озвучивается заранее.</span></li>
       </ol>
     </section>
 
-    <section class="section documents-section" id="documents">
+    <section class="section documents-section" id="safety">
       <div class="section-head center">
         <p class="eyebrow">Безопасность</p>
         <h2>Аккуратный медицинский контур</h2>
-        <p>Формат помощи определяется после уточнения состояния. Сайт не обещает лечение на расстоянии и не заменяет очный осмотр или экстренную помощь.</p>
+        <p>Помощь определяется по состоянию пациента. Сайт не обещает лечение на расстоянии и не заменяет очный осмотр или экстренную медицинскую помощь.</p>
       </div>
       <div class="document-grid">
-        <article><i data-lucide="file-check-2" class="card-icon"></i><strong>Медицинские ограничения</strong><span>решение принимается по состоянию пациента</span></article>
-        <article><i data-lucide="building-2" class="card-icon"></i><strong>Прозрачные условия</strong><span>формат и стоимость согласуются до выезда</span></article>
+        <article><i data-lucide="file-check-2" class="card-icon"></i><strong>Медицинские ограничения</strong><span>решение принимается после уточнения состояния</span></article>
+        <article><i data-lucide="scan-text" class="card-icon"></i><strong>Прозрачные условия</strong><span>формат, время и стоимость согласуются заранее</span></article>
         <article><i data-lucide="scroll-text" class="card-icon"></i><strong>Защита данных</strong><span>данные используются только для обратной связи</span></article>
       </div>
     </section>
@@ -182,18 +176,18 @@
     <section class="section request-section" id="request">
       <div class="request-copy">
         <p class="eyebrow">Заявка</p>
-        <h2>Опишите ситуацию — специалист свяжется с вами</h2>
-        <p>Оставьте контакты и кратко опишите ситуацию. Специалист сможет быстро понять срочность обращения и предложить дальнейший порядок действий.</p>
+        <h2>Опишите ситуацию — с вами свяжутся для уточнения</h2>
+        <p>Оставьте контакты и несколько деталей. Так проще сразу понять срочность, возможный формат помощи и стоимость.</p>
         <div class="next-contact-card">
           <strong>После заявки</strong>
-          <span>1. Уточнение ситуации</span>
+          <span>1. Уточнение состояния и срочности</span>
           <span>2. Согласование формата и стоимости</span>
-          <span>3. Решение: консультация, выезд или экстренная служба</span>
+          <span>3. Решение: консультация, выезд, клиника или 103/112</span>
         </div>
         <div class="request-checks">
           <span>✓ телефон обязателен</span>
-          <span>✓ срочность видна сразу</span>
-          <span>✓ есть согласие на обработку</span>
+          <span>✓ описание можно коротко</span>
+          <span>✓ без публичной записи</span>
         </div>
       </div>
       <form class="request-form" id="leadForm" action="#" method="post">
@@ -201,7 +195,7 @@
         <label>Телефон<input name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 ..." required></label>
         <label>Город / район<input name="area" placeholder="Укажите город или район"></label>
         <label>Срочность<select name="urgency"><option>Сегодня</option><option>Сейчас</option><option>Планово</option></select></label>
-        <label class="wide">Кратко ситуация<textarea name="message" rows="4" placeholder="Что произошло, кому нужна помощь"></textarea></label>
+        <label class="wide">Кратко ситуация<textarea name="message" rows="4" placeholder="Что произошло, кому нужна помощь, есть ли тревожные симптомы"></textarea></label>
         <label class="consent wide"><input type="checkbox" required> <span>Согласен на обработку данных для обратной связи и ознакомлен с <a href="privacy.html">политикой обработки данных</a></span></label>
         <button class="button primary wide" type="submit">Получить консультацию</button>
         <p class="form-footnote wide">Нажатие кнопки не является вызовом скорой помощи. При угрозе жизни звоните 103/112.</p>
@@ -217,27 +211,28 @@
       <div class="faq-grid">
         <article><h3>Сколько стоит помощь?</h3><p>Выезд / первичное обращение — от 15 000 ₽ + такси. Итоговая стоимость зависит от адреса, срочности и формата помощи.</p></article>
         <article><h3>Можно обратиться за родственника?</h3><p>Да, можно оставить заявку и описать ситуацию. Специалист подскажет, какие шаги безопасны и уместны.</p></article>
-        <article><h3>Это конфиденциально?</h3><p>Обращение обрабатывается деликатно: данные используются только для связи и согласования помощи. Медицинские действия возможны по показаниям и в рамках закона.</p></article>
+        <article><h3>Это конфиденциально?</h3><p>Контакты и описание ситуации используются только для связи и согласования помощи. Медицинские действия возможны по показаниям и в рамках закона.</p></article>
         <article><h3>Что делать, если человеку резко плохо?</h3><p>При угрозе жизни, потере сознания, судорогах или тяжёлом состоянии звоните 103 или 112.</p></article>
       </div>
     </section>
   </main>
 
   <div class="mobile-cta" aria-label="Быстрые действия">
-    <a href="#request">Описать ситуацию</a>
+    <a href="#process">Как проходит</a>
     <a class="primary" href="#request">Оставить заявку</a>
   </div>
 
   <footer class="footer">
     <div>
-      <strong>Доктор — Николай Курников</strong>
+      <strong>Николай Курников</strong>
       <p>Информация на сайте носит справочный характер. Формат помощи, стоимость и дальнейшие действия согласуются индивидуально после уточнения состояния. <a href="privacy.html">Политика обработки данных</a></p>
     </div>
     <div>
-      <p>Информация на сайте носит справочный характер и не заменяет очную консультацию врача.</p>
+      <p>Сайт не заменяет очную консультацию и не является службой экстренной медицинской помощи.</p>
       <p>В экстренных случаях обращайтесь в скорую медицинскую помощь: 103 / 112.</p>
     </div>
   </footer>
+
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="script.js"></script>
 </body>
