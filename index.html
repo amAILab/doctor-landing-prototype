@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Доктор — конфиденциальная медицинская помощь</title>
   <meta name="description" content="Конфиденциальная помощь врача при сложных состояниях. Консультация, выезд специалиста, сопровождение семьи. От 15 000 ₽ + такси.">
+  <meta name="theme-color" content="#f4f8fb">
+  <meta property="og:title" content="Доктор — конфиденциальная медицинская помощь">
+  <meta property="og:description" content="Консультация, выезд специалиста и помощь семье. От 15 000 ₽ + такси.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#request">Перейти к заявке</a>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Доктор">
       <span class="brand-mark">+</span>
       <span><strong>Доктор</strong><small>конфиденциальная помощь</small></span>
     </a>
-    <nav>
+    <nav aria-label="Навигация">
+      <a href="#situations">Когда обращаться</a>
       <a href="#services">Услуги</a>
       <a href="#process">Как проходит</a>
       <a href="#faq">FAQ</a>
@@ -24,68 +31,94 @@
   <main id="top">
     <section class="hero">
       <div class="hero-content">
+        <div class="hero-badges" aria-label="Ключевые условия">
+          <span>Конфиденциально</span>
+          <span>Выезд по согласованию</span>
+          <span>От 15 000 ₽ + такси</span>
+        </div>
         <p class="eyebrow">Врачебная помощь без лишней огласки</p>
-        <h1>Конфиденциальная помощь специалиста при зависимостях и острых состояниях</h1>
-        <p class="lead">Оставьте заявку — специалист уточнит ситуацию, подскажет возможные варианты помощи и согласует удобный формат обращения.</p>
+        <h1>Наркологическая помощь, когда нужно быстро и деликатно</h1>
+        <p class="lead">Специалист уточнит ситуацию, объяснит возможные варианты помощи и заранее согласует формат обращения, стоимость и время.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#request">Получить консультацию</a>
+          <a class="button primary" href="#request">Оставить заявку</a>
           <a class="button secondary" href="tel:+70000000000">Позвонить</a>
         </div>
-        <p class="micro">Стоимость выезда / первичного обращения — <strong>от 15 000 ₽ + такси</strong>. Точная сумма согласуется до выезда.</p>
+        <div class="hero-note">
+          <strong>Важно:</strong> сайт не является службой экстренной помощи. Если есть угроза жизни или здоровью — звоните <b>103 / 112</b>.
+        </div>
       </div>
-      <aside class="hero-card" aria-label="Краткая информация">
-        <div class="status-pill">Конфиденциально</div>
-        <h2>Когда нужна помощь</h2>
-        <ul>
-          <li>ситуация требует быстрого решения;</li>
-          <li>нужна консультация для родственника;</li>
-          <li>требуется деликатный выезд;</li>
-          <li>семье нужен понятный план действий.</li>
-        </ul>
-        <p class="emergency">Если есть угроза жизни или здоровью — звоните <strong>103 / 112</strong>.</p>
+
+      <aside class="hero-panel" aria-label="Быстрая заявка">
+        <div class="panel-top">
+          <span class="pulse-dot"></span>
+          <span>Можно оставить заявку сейчас</span>
+        </div>
+        <h2>Первичный контакт</h2>
+        <p>Опишите ситуацию коротко. Достаточно телефона, района и срочности.</p>
+        <div class="price-card">
+          <span>Ориентир стоимости</span>
+          <strong>от 15 000 ₽ + такси</strong>
+          <small>итоговая сумма согласуется до выезда</small>
+        </div>
+        <a class="button primary wide" href="#request">Получить консультацию</a>
+        <p class="privacy-line">Без публичной записи на сайте. Данные нужны только для обратной связи.</p>
       </aside>
     </section>
 
     <section class="trust-strip" aria-label="Преимущества">
-      <article><strong>Без осуждения</strong><span>спокойный медицинский подход</span></article>
-      <article><strong>Деликатно</strong><span>без публичной записи на сайте</span></article>
-      <article><strong>Понятно</strong><span>объясняем маршрут помощи</span></article>
-      <article><strong>Быстро</strong><span>связь после заявки</span></article>
+      <article><span class="icon">✓</span><strong>Без осуждения</strong><small>спокойный медицинский подход</small></article>
+      <article><span class="icon">◷</span><strong>Быстрый контакт</strong><small>сначала уточняем срочность</small></article>
+      <article><span class="icon">₽</span><strong>Цена заранее</strong><small>без сюрпризов после выезда</small></article>
+      <article><span class="icon">◌</span><strong>Деликатно</strong><small>бережно к пациенту и семье</small></article>
+    </section>
+
+    <section class="section situations" id="situations">
+      <div class="section-head center">
+        <p class="eyebrow">Когда обращаться</p>
+        <h2>Если семье нужен понятный план действий</h2>
+        <p>Заявка помогает быстро понять, какой формат помощи уместен: консультация, выезд, профильная клиника или экстренная служба.</p>
+      </div>
+      <div class="situation-grid">
+        <article><strong>Нужна помощь родственнику</strong><p>Пациент не готов сам обращаться, семье нужно понять, что делать дальше.</p></article>
+        <article><strong>Состояние вызывает тревогу</strong><p>Требуется оценить срочность и выбрать безопасный маршрут помощи.</p></article>
+        <article><strong>Нужен деликатный выезд</strong><p>После уточнения состояния и адреса можно согласовать приезд специалиста.</p></article>
+        <article><strong>Нужна консультация</strong><p>Можно начать с разговора: без давления, публичности и лишних деталей.</p></article>
+      </div>
     </section>
 
     <section class="section proof-section" id="proof">
       <div class="section-head">
         <p class="eyebrow">Доверие</p>
-        <h2>Спокойный медицинский подход вместо давления и громких обещаний</h2>
+        <h2>Медицинская корректность вместо агрессивной рекламы</h2>
       </div>
       <div class="proof-grid">
-        <article><strong>Врачебная тайна</strong><p>Данные обращения используются только для связи и согласования помощи.</p></article>
-        <article><strong>Без гарантий «за один день»</strong><p>Специалист объясняет реальные варианты помощи после уточнения ситуации.</p></article>
-        <article><strong>Стоимость заранее</strong><p>Базовый ориентир — от 15 000 ₽ + такси. Итоговая сумма согласуется до выезда.</p></article>
+        <article><strong>Конфиденциальность</strong><p>Данные обращения используются только для связи и согласования помощи.</p></article>
+        <article><strong>Без обещаний «за один день»</strong><p>Без недобросовестных гарантий результата. Реальные варианты обсуждаются после уточнения ситуации.</p></article>
+        <article><strong>Экстренные случаи — 103/112</strong><p>Если состояние опасно для жизни, нужно обращаться в скорую медицинскую помощь.</p></article>
       </div>
     </section>
 
     <section class="section" id="services">
-      <div class="section-head">
+      <div class="section-head center">
         <p class="eyebrow">Услуги</p>
-        <h2>Помощь в сложной ситуации — аккуратно и по медицинским показаниям</h2>
+        <h2>Помощь в сложной ситуации — аккуратно и по показаниям</h2>
       </div>
       <div class="cards">
-        <article class="card"><h3>Первичная консультация</h3><p>Уточнение ситуации, ответы на вопросы семьи и рекомендации по дальнейшим шагам.</p></article>
-        <article class="card"><h3>Выезд специалиста</h3><p>Возможен после уточнения состояния пациента, адреса и срочности обращения.</p></article>
-        <article class="card"><h3>Помощь семье</h3><p>Как говорить с пациентом, чего избегать и когда нужна очная медицинская помощь.</p></article>
-        <article class="card"><h3>Сопровождение</h3><p>План дальнейших действий после первичного обращения и рекомендации по профильной помощи.</p></article>
+        <article class="card featured"><span>01</span><h3>Первичная консультация</h3><p>Уточнение ситуации, ответы на вопросы семьи и рекомендации по дальнейшим шагам.</p></article>
+        <article class="card"><span>02</span><h3>Выезд специалиста</h3><p>Возможен после уточнения состояния пациента, адреса и срочности обращения.</p></article>
+        <article class="card"><span>03</span><h3>Помощь семье</h3><p>Как говорить с пациентом, чего избегать и когда нужна очная медицинская помощь.</p></article>
+        <article class="card"><span>04</span><h3>Сопровождение</h3><p>План дальнейших действий после первичного обращения и рекомендации по профильной помощи.</p></article>
       </div>
     </section>
 
     <section class="section split" id="process">
-      <div>
+      <div class="sticky-copy">
         <p class="eyebrow">Процесс</p>
-        <h2>Как проходит обращение</h2>
-        <p>Сайт не заменяет медицинскую диагностику. Его задача — быстро связать вас со специалистом и помочь выбрать безопасный маршрут.</p>
+        <h2>4 шага от заявки до понятного решения</h2>
+        <p>Сайт не заменяет диагностику. Его задача — быстро связать вас со специалистом и не потерять важные детали обращения.</p>
       </div>
       <ol class="steps">
-        <li><strong>Заявка</strong><span>Вы оставляете телефон и кратко описываете ситуацию.</span></li>
+        <li><strong>Заявка</strong><span>Вы оставляете телефон и короткое описание ситуации.</span></li>
         <li><strong>Уточнение</strong><span>Специалист связывается, уточняет срочность, адрес и состояние.</span></li>
         <li><strong>Формат помощи</strong><span>Согласовывается консультация, выезд или направление в профильную клинику.</span></li>
         <li><strong>Стоимость</strong><span>Цена от 15 000 ₽ + такси, итоговая сумма озвучивается заранее.</span></li>
@@ -96,21 +129,27 @@
       <div class="request-copy">
         <p class="eyebrow">Заявка</p>
         <h2>Опишите ситуацию — специалист свяжется с вами</h2>
-        <p>Данные используются только для обратной связи. В экстренных случаях обращайтесь в скорую помощь.</p>
+        <p>Для MVP форма пока демонстрационная. Перед запуском подключим отправку в Telegram/Google Sheets/CRM и добавим реальные документы.</p>
+        <div class="request-checks">
+          <span>✓ телефон обязателен</span>
+          <span>✓ срочность видна сразу</span>
+          <span>✓ есть согласие на обработку</span>
+        </div>
       </div>
       <form class="request-form" action="#" method="post">
         <label>Имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
-        <label>Телефон<input name="phone" autocomplete="tel" placeholder="+7 ..." required></label>
+        <label>Телефон<input name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 ..." required></label>
         <label>Город / район<input name="area" placeholder="Например: Москва, ЮЗАО"></label>
         <label>Срочность<select name="urgency"><option>Сегодня</option><option>Сейчас</option><option>Планово</option></select></label>
         <label class="wide">Кратко ситуация<textarea name="message" rows="4" placeholder="Что произошло, кому нужна помощь"></textarea></label>
         <label class="consent wide"><input type="checkbox" required> <span>Согласен на обработку данных для обратной связи</span></label>
         <button class="button primary wide" type="submit">Получить консультацию</button>
+        <p class="form-footnote wide">Нажатие кнопки не является вызовом скорой помощи. При угрозе жизни звоните 103/112.</p>
       </form>
     </section>
 
     <section class="section" id="faq">
-      <div class="section-head">
+      <div class="section-head center">
         <p class="eyebrow">FAQ</p>
         <h2>Частые вопросы</h2>
       </div>
@@ -123,10 +162,15 @@
     </section>
   </main>
 
+  <div class="mobile-cta" aria-label="Быстрые действия">
+    <a href="tel:+70000000000">Позвонить</a>
+    <a class="primary" href="#request">Заявка</a>
+  </div>
+
   <footer class="footer">
     <div>
       <strong>Доктор</strong>
-      <p>Черновой прототип. Реальные контакты, лицензия, реквизиты и политика обработки данных добавляются перед запуском рекламы.</p>
+      <p>Черновой MVP. Реальные контакты, лицензия, реквизиты, политика обработки данных и медицинский контур добавляются перед запуском рекламы.</p>
     </div>
     <div>
       <p>Информация на сайте носит справочный характер и не заменяет очную консультацию врача.</p>
