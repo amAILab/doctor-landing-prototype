@@ -15,10 +15,10 @@
     const button = form.querySelector('button[type="submit"]');
     if (button) {
       button.disabled = true;
-      button.textContent = 'Заявка подготовлена';
+      button.textContent = 'Данные сохранены на странице';
     }
     form.classList.add('is-sent');
-    status.textContent = 'Заявка подготовлена. После подключения формы она будет автоматически передаваться специалисту.';
+    status.textContent = 'Спасибо. Проверьте телефон и краткое описание ситуации перед отправкой через согласованный канал связи.';
     status.classList.add('is-visible');
   });
 })();
