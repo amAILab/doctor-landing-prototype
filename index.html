@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Доктор — конфиденциальная медицинская помощь</title>
+  <meta name="description" content="Конфиденциальная помощь врача при сложных состояниях. Консультация, выезд специалиста, сопровождение семьи. От 15 000 ₽ + такси.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Доктор">
+      <span class="brand-mark">+</span>
+      <span><strong>Доктор</strong><small>конфиденциальная помощь</small></span>
+    </a>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#process">Как проходит</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#request">Получить консультацию</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Врачебная помощь без лишней огласки</p>
+        <h1>Конфиденциальная помощь специалиста при зависимостях и острых состояниях</h1>
+        <p class="lead">Оставьте заявку — специалист уточнит ситуацию, подскажет возможные варианты помощи и согласует удобный формат обращения.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#request">Получить консультацию</a>
+          <a class="button secondary" href="tel:+70000000000">Позвонить</a>
+        </div>
+        <p class="micro">Стоимость выезда / первичного обращения — <strong>от 15 000 ₽ + такси</strong>. Точная сумма согласуется до выезда.</p>
+      </div>
+      <aside class="hero-card" aria-label="Краткая информация">
+        <div class="status-pill">Конфиденциально</div>
+        <h2>Когда нужна помощь</h2>
+        <ul>
+          <li>ситуация требует быстрого решения;</li>
+          <li>нужна консультация для родственника;</li>
+          <li>требуется деликатный выезд;</li>
+          <li>семье нужен понятный план действий.</li>
+        </ul>
+        <p class="emergency">Если есть угроза жизни или здоровью — звоните <strong>103 / 112</strong>.</p>
+      </aside>
+    </section>
+
+    <section class="trust-strip" aria-label="Преимущества">
+      <article><strong>Без осуждения</strong><span>спокойный медицинский подход</span></article>
+      <article><strong>Деликатно</strong><span>без публичной записи на сайте</span></article>
+      <article><strong>Понятно</strong><span>объясняем маршрут помощи</span></article>
+      <article><strong>Быстро</strong><span>связь после заявки</span></article>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-head">
+        <p class="eyebrow">Услуги</p>
+        <h2>Помощь в сложной ситуации — аккуратно и по медицинским показаниям</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Первичная консультация</h3><p>Уточнение ситуации, ответы на вопросы семьи и рекомендации по дальнейшим шагам.</p></article>
+        <article class="card"><h3>Выезд специалиста</h3><p>Возможен после уточнения состояния пациента, адреса и срочности обращения.</p></article>
+        <article class="card"><h3>Помощь семье</h3><p>Как говорить с пациентом, чего избегать и когда нужна очная медицинская помощь.</p></article>
+        <article class="card"><h3>Сопровождение</h3><p>План дальнейших действий после первичного обращения и рекомендации по профильной помощи.</p></article>
+      </div>
+    </section>
+
+    <section class="section split" id="process">
+      <div>
+        <p class="eyebrow">Процесс</p>
+        <h2>Как проходит обращение</h2>
+        <p>Сайт не заменяет медицинскую диагностику. Его задача — быстро связать вас со специалистом и помочь выбрать безопасный маршрут.</p>
+      </div>
+      <ol class="steps">
+        <li><strong>Заявка</strong><span>Вы оставляете телефон и кратко описываете ситуацию.</span></li>
+        <li><strong>Уточнение</strong><span>Специалист связывается, уточняет срочность, адрес и состояние.</span></li>
+        <li><strong>Формат помощи</strong><span>Согласовывается консультация, выезд или направление в профильную клинику.</span></li>
+        <li><strong>Стоимость</strong><span>Цена от 15 000 ₽ + такси, итоговая сумма озвучивается заранее.</span></li>
+      </ol>
+    </section>
+
+    <section class="section request-section" id="request">
+      <div class="request-copy">
+        <p class="eyebrow">Заявка</p>
+        <h2>Опишите ситуацию — специалист свяжется с вами</h2>
+        <p>Данные используются только для обратной связи. В экстренных случаях обращайтесь в скорую помощь.</p>
+      </div>
+      <form class="request-form" action="#" method="post">
+        <label>Имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
+        <label>Телефон<input name="phone" autocomplete="tel" placeholder="+7 ..." required></label>
+        <label>Город / район<input name="area" placeholder="Например: Москва, ЮЗАО"></label>
+        <label>Срочность<select name="urgency"><option>Сегодня</option><option>Сейчас</option><option>Планово</option></select></label>
+        <label class="wide">Кратко ситуация<textarea name="message" rows="4" placeholder="Что произошло, кому нужна помощь"></textarea></label>
+        <label class="consent wide"><input type="checkbox" required> <span>Согласен на обработку данных для обратной связи</span></label>
+        <button class="button primary wide" type="submit">Получить консультацию</button>
+      </form>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Частые вопросы</h2>
+      </div>
+      <div class="faq-grid">
+        <article><h3>Сколько стоит помощь?</h3><p>Выезд / первичное обращение — от 15 000 ₽ + такси. Итоговая стоимость зависит от адреса, срочности и формата помощи.</p></article>
+        <article><h3>Можно обратиться за родственника?</h3><p>Да, можно оставить заявку и описать ситуацию. Специалист подскажет, какие шаги безопасны и уместны.</p></article>
+        <article><h3>Это анонимно?</h3><p>Обращение обрабатывается конфиденциально. Юридические детали зависят от формата услуги и медицинского контура.</p></article>
+        <article><h3>Что делать, если человеку резко плохо?</h3><p>При угрозе жизни, потере сознания, судорогах или тяжёлом состоянии звоните 103 или 112.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Информация на сайте носит справочный характер и не заменяет очную консультацию врача.</p>
+    <p>В экстренных случаях обращайтесь в скорую медицинскую помощь: 103 / 112.</p>
+  </footer>
+</body>
+</html>
