@@ -1,0 +1,5 @@
+# GitHub Pages / Jekyll: publish only the landing site assets.
+# Internal research and reference notes must not be exposed as public pages.
+exclude:
+  - docs
+  - docs/**
