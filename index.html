@@ -10,6 +10,8 @@
   <meta property="og:description" content="Консультация, согласованный выезд специалиста и помощь семье. Опыт с 2007 года. От 15 000 ₽ + такси.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://amailab.github.io/doctor-landing-prototype/">
+  <meta property="og:image" content="https://amailab.github.io/doctor-landing-prototype/assets/pro-zhizn-consultation-hero.webp">
+  <meta name="format-detection" content="telephone=yes">
   <link rel="canonical" href="https://amailab.github.io/doctor-landing-prototype/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
@@ -28,6 +30,7 @@
     <span>Конфиденциальная наркологическая помощь</span>
     <span>Опыт с 2007 года</span>
     <span>Выезд: от 15 000 ₽ + такси</span>
+    <a href="tel:+74951234567">Позвонить: +7 (495) 123-45-67</a>
     <a href="#request">Оставить заявку</a>
   </div>
 
@@ -42,6 +45,7 @@
       <a href="#principles">Принципы</a>
       <a href="#safety">Безопасность</a>
       <a href="#faq">Вопросы</a>
+      <a href="tel:+74951234567">+7 (495) 123-45-67</a>
       <a class="nav-cta" href="#request">Получить консультацию</a>
     </nav>
   </header>
@@ -58,7 +62,8 @@
         <h1 id="hero-title">Наркологическая помощь — спокойно, деликатно и по понятному плану</h1>
         <p class="lead">PRO Жизнь помогает семье спокойно разобраться в ситуации: уточнить состояние, срочность и район выезда, объяснить возможные варианты помощи и заранее согласовать стоимость до выезда.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#request">Оставить заявку</a>
+          <a class="button primary" href="tel:+74951234567">Позвонить сейчас</a>
+          <a class="button secondary" href="#request">Оставить заявку</a>
           <a class="button secondary" href="#process">Как это проходит</a>
         </div>
         <div class="hero-warning" role="note">
@@ -81,7 +86,10 @@
           <strong>от 15 000 ₽ + такси</strong>
           <small>итоговая сумма согласуется до выезда</small>
         </div>
-        <a class="button primary wide" href="#request">Получить консультацию</a>
+        <div class="panel-actions">
+          <a class="button primary wide" href="tel:+74951234567">Позвонить: +7 (495) 123-45-67</a>
+          <a class="button secondary wide" href="#request">Оставить заявку</a>
+        </div>
         <p class="privacy-line">Данные используются только для обратной связи и согласования помощи.</p>
       </aside>
     </section>
@@ -207,6 +215,11 @@
           <span>2. Согласование формата и стоимости</span>
           <span>3. Решение: консультация, выезд, клиника или 103/112</span>
         </div>
+        <div class="phone-card">
+          <span>Если удобнее сразу поговорить</span>
+          <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+          <small>временный городской номер, заменим перед публикацией</small>
+        </div>
         <div class="request-checks">
           <span>✓ телефон обязателен</span>
           <span>✓ описание можно коротко</span>
@@ -243,7 +256,7 @@
   </main>
 
   <div class="mobile-cta" aria-label="Быстрые действия">
-    <a href="#process">Как проходит</a>
+    <a href="tel:+74951234567">Позвонить</a>
     <a class="primary" href="#request">Оставить заявку</a>
   </div>
 
@@ -258,6 +271,9 @@
     </div>
   </footer>
 
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MedicalBusiness","name":"PRO Жизнь","url":"https://amailab.github.io/doctor-landing-prototype/","telephone":"+7-495-123-45-67","founder":{"@type":"Person","name":"Николай Курников"},"description":"Конфиденциальная наркологическая помощь, консультация семьи и согласованный выезд специалиста.","areaServed":"Москва и Московская область","medicalSpecialty":"AddictionMedicine"}
+  </script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="script.js"></script>
 </body>
