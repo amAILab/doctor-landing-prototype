@@ -19,6 +19,11 @@
     nav.addEventListener('click', (event) => {
       if (event.target.closest('a')) closeMenu();
     });
+    document.addEventListener('click', (event) => {
+      if (!header.classList.contains('is-open')) return;
+      if (event.target.closest('.site-header')) return;
+      closeMenu();
+    });
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') closeMenu();
     });
