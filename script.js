@@ -54,8 +54,23 @@
       button.textContent = 'Заявка подготовлена';
     }
 
+    const leadDraft = {
+      name: (form.querySelector('[name="name"]') || {}).value || '',
+      phone: phone.value.trim(),
+      area: (form.querySelector('[name="area"]') || {}).value || '',
+      urgency: (form.querySelector('[name="urgency"]') || {}).value || '',
+      message: (form.querySelector('[name="message"]') || {}).value || '',
+      createdAt: new Date().toISOString()
+    };
+
+    try {
+      window.localStorage.setItem('proZhiznLeadDraft', JSON.stringify(leadDraft));
+    } catch (error) {
+      // localStorage is optional: the prototype must still work without it.
+    }
+
     form.classList.add('is-sent');
-    status.textContent = 'Спасибо. Проверьте телефон и описание ситуации: эти данные понадобятся для обратной связи и согласования помощи.';
+    status.textContent = 'Спасибо. Заявка подготовлена и сохранена в этом браузере как черновик. Проверьте телефон и описание ситуации перед подключением реальной CRM/почты.';
     status.classList.add('is-visible');
   });
 })();
