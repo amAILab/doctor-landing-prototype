@@ -34,11 +34,16 @@ button,input,select,textarea{font:inherit}
 
 .topline{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap;padding:9px 18px;background:#111513;color:#f6fff9;font-size:13px;font-weight:850;letter-spacing:.01em}
 .topline a{padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.12);color:#fff}
-.site-header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:15px clamp(16px,4vw,64px);background:rgba(251,251,248,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(227,229,223,.82)}
+.site-header{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:15px clamp(16px,4vw,64px);background:rgba(251,251,248,.90);backdrop-filter:blur(18px);border-bottom:1px solid rgba(227,229,223,.82)}
 .brand{display:flex;align-items:center;gap:12px;min-width:max-content}
 .brand img{width:42px;height:42px;border-radius:15px;box-shadow:0 12px 30px rgba(17,21,19,.12)}
 .brand strong{display:block;font-size:17px;letter-spacing:-.02em}
 .brand small{display:block;margin-top:2px;color:var(--muted);font-size:12px}
+.menu-toggle{display:none;border:0;background:#111513;color:#fff;width:44px;height:44px;border-radius:15px;padding:11px;box-shadow:0 12px 28px rgba(17,21,19,.14);cursor:pointer}
+.menu-toggle span{display:block;height:2px;margin:5px 0;border-radius:999px;background:#fff;transition:transform .2s ease,opacity .2s ease}
+.site-header.is-open .menu-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.site-header.is-open .menu-toggle span:nth-child(2){opacity:0}
+.site-header.is-open .menu-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 nav{display:flex;align-items:center;gap:18px;color:#464e49;font-size:14px;font-weight:720}
 nav a{transition:color .18s ease}
 nav a:hover{color:#000}
@@ -200,8 +205,13 @@ h1,h2,h3,p{margin-top:0}
 }
 @media(max-width:860px){
   .topline{display:none}
-  .site-header{position:relative}
-  .site-header nav{display:none}
+  .site-header{position:sticky;top:0;padding-block:12px}
+  .menu-toggle{display:block;flex:0 0 auto}
+  .site-header nav{position:absolute;left:12px;right:12px;top:calc(100% + 8px);display:grid;gap:6px;padding:10px;border:1px solid rgba(227,229,223,.95);border-radius:22px;background:rgba(255,255,255,.96);backdrop-filter:blur(18px);box-shadow:0 22px 60px rgba(17,21,19,.16);opacity:0;visibility:hidden;transform:translateY(-8px);pointer-events:none;transition:.2s ease}
+  .site-header.is-open nav{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}
+  .site-header nav a{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:11px 13px;border-radius:14px;background:#f6f7f3;color:#303733;font-size:14px;font-weight:900}
+  .site-header nav a:hover{background:#eef2ec;color:#111513}
+  .site-header nav .nav-cta{justify-content:center;background:linear-gradient(135deg,#111513 0%,#0d3b2b 48%,#18b979 100%);color:#fff!important;box-shadow:none}
   .brand img{width:39px;height:39px}
   .hero{gap:22px;padding-top:28px}
   .hero h1{font-size:clamp(35px,9vw,46px)}
