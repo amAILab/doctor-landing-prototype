@@ -59,8 +59,8 @@ h1,h2,h3,p{margin-top:0}
 .primary::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.20) 42%,transparent 70%);transform:translateX(-125%);animation:shine 6.8s ease-in-out infinite}
 .secondary{background:#fff;border:1px solid var(--line);color:#111513;box-shadow:0 10px 28px rgba(17,21,19,.055)}
 .wide{width:100%;grid-column:1/-1}
-.hero-warning{display:flex;gap:11px;align-items:flex-start;max-width:740px;padding:13px 14px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.76);color:#4c554f;line-height:1.45;font-size:14px;box-shadow:0 10px 28px rgba(17,21,19,.04)}
-.hero-warning svg{flex:0 0 20px;width:20px;height:20px;color:#0e9f68;margin-top:1px}
+.hero-warning{display:flex;gap:11px;align-items:flex-start;max-width:740px;padding:13px 14px;border:1px solid #f0b7ad;border-left:5px solid #d94b3d;border-radius:17px;background:linear-gradient(135deg,#fff7f5,#fffdfb);color:#65302b;line-height:1.45;font-size:14px;box-shadow:0 10px 28px rgba(217,75,61,.08)}
+.hero-warning svg{flex:0 0 20px;width:20px;height:20px;color:#d94b3d;margin-top:1px}
 
 .hero-panel,.trust-strip article,.situation-grid article,.proof-grid article,.card,.doctor-card,.document-grid article,.request-form,.faq-grid article,.next-contact-card{background:rgba(255,255,255,.92);border:1px solid rgba(227,229,223,.95);box-shadow:var(--shadow);border-radius:var(--radius)}
 .hero-panel{position:relative;overflow:hidden;padding:24px;border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(247,248,245,.94))}
@@ -148,7 +148,7 @@ h1,h2,h3,p{margin-top:0}
 .consent{display:flex!important;align-items:flex-start;gap:10px;color:var(--muted)!important;font-weight:650!important;line-height:1.35}
 .consent input{width:auto;margin-top:2px}
 .consent a,.footer a{color:#111513;text-decoration:underline;text-underline-offset:3px}
-.form-alert{padding:13px 15px;border:1px solid #ead7bd;border-radius:16px;background:var(--warning);color:#704211;font-size:13px;font-weight:780;line-height:1.45}
+.form-alert{padding:13px 15px;border:1px solid #f0b7ad;border-left:5px solid #d94b3d;border-radius:16px;background:linear-gradient(135deg,#fff7f5,#fffdfb);color:#65302b;font-size:13px;font-weight:780;line-height:1.45}
 .form-footnote{margin:0;color:#704211;font-size:13px;line-height:1.4}
 .privacy-hint{margin:-2px 0 0;color:var(--muted);font-size:13px;line-height:1.45}
 .form-status{display:none;padding:14px 16px;border-radius:18px;background:#edf9f2;color:#0d6f49;font-weight:850;line-height:1.4}
